@@ -27,16 +27,16 @@ namespace BankingMicroServiceSample.CreditCardService.Controllers
             return await creditCardServiceContext.CreditCards.Where(p=>p.CustomerId == Id).ToListAsync();
         }
 
-        [HttpPost]
-        public async Task<IActionResult> ApplyForCreditCard(int CustomerId)
+        [HttpPost("{id}")]
+        public async Task<IActionResult> ApplyForCreditCard(int Id)
         {
-            var customerCardList = await creditCardServiceContext.CreditCards.Where(p => p.CustomerId == CustomerId).ToListAsync();
+            var customerCardList = await creditCardServiceContext.CreditCards.Where(p => p.CustomerId == Id).ToListAsync();
 
             if (!customerCardList.Any())
             {
                 var newCard = new CreditCard
                 {
-                    CustomerId = CustomerId,
+                    CustomerId = Id,
                     CVV = Faker.RandomNumber.Next(999).ToString(),
                     EmbossName = Faker.Name.FullName(NameFormats.Standard),
                     LastUseMonth = Faker.Identification.DateOfBirth().Month,
@@ -47,7 +47,7 @@ namespace BankingMicroServiceSample.CreditCardService.Controllers
                 creditCardServiceContext.Add(newCard);
                 await creditCardServiceContext.SaveChangesAsync();
 
-                return Ok(CustomerId);
+                return Ok(Id);
             }
 
             return NotFound();            
