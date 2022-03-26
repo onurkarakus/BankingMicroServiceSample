@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingMicroServiceSample.CreditCardService", "BankingMicroServiceSample.CreditCard\BankingMicroServiceSample.CreditCardService.csproj", "{4DD7A9CD-7B7F-41A6-A3FE-10EE16049A35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankingMicroServiceSample.CreditCardService", "BankingMicroServiceSample.CreditCard\BankingMicroServiceSample.CreditCardService.csproj", "{4DD7A9CD-7B7F-41A6-A3FE-10EE16049A35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingMicroServiceSample.AccountService", "BankingMicroServiceSample.Account\BankingMicroServiceSample.AccountService.csproj", "{F051E53F-014F-4EEB-A4A7-A02A51D9EB51}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankingMicroServiceSample.AccountService", "BankingMicroServiceSample.Account\BankingMicroServiceSample.AccountService.csproj", "{F051E53F-014F-4EEB-A4A7-A02A51D9EB51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingMicroServiceSample.CustomerService", "BankingMicroServiceSample.Customer\BankingMicroServiceSample.CustomerService.csproj", "{FE412335-DD0E-4DBA-A24D-6FADF2250BBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankingMicroServiceSample.CustomerService", "BankingMicroServiceSample.Customer\BankingMicroServiceSample.CustomerService.csproj", "{FE412335-DD0E-4DBA-A24D-6FADF2250BBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingMicroServiceSample.NotificationService", "BankingMicroServiceSample.Notification\BankingMicroServiceSample.NotificationService.csproj", "{35133627-FE37-4BDF-8FF2-CA4F56483A66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankingMicroServiceSample.NotificationService", "BankingMicroServiceSample.Notification\BankingMicroServiceSample.NotificationService.csproj", "{35133627-FE37-4BDF-8FF2-CA4F56483A66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingMicroServiceSample.GateWay", "BankingMicroServiceSample.GateWay\BankingMicroServiceSample.GateWay.csproj", "{F04C5D9A-96E4-40DD-B7BE-9B8DA3B82BD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankingMicroServiceSample.GateWay", "BankingMicroServiceSample.GateWay\BankingMicroServiceSample.GateWay.csproj", "{F04C5D9A-96E4-40DD-B7BE-9B8DA3B82BD3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingMicroServiceSample.Common", "BankingMocroServiceSample.Common\BankingMicroServiceSample.Common.csproj", "{04DBB4E8-FB45-4145-BF16-4AC4E51668C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankingMicroServiceSample.Common", "BankingMocroServiceSample.Common\BankingMicroServiceSample.Common.csproj", "{04DBB4E8-FB45-4145-BF16-4AC4E51668C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5946B20A-C826-498B-A0B7-766CCFD043AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +50,14 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4DD7A9CD-7B7F-41A6-A3FE-10EE16049A35} = {5946B20A-C826-498B-A0B7-766CCFD043AC}
+		{F051E53F-014F-4EEB-A4A7-A02A51D9EB51} = {5946B20A-C826-498B-A0B7-766CCFD043AC}
+		{FE412335-DD0E-4DBA-A24D-6FADF2250BBE} = {5946B20A-C826-498B-A0B7-766CCFD043AC}
+		{35133627-FE37-4BDF-8FF2-CA4F56483A66} = {5946B20A-C826-498B-A0B7-766CCFD043AC}
+		{F04C5D9A-96E4-40DD-B7BE-9B8DA3B82BD3} = {5946B20A-C826-498B-A0B7-766CCFD043AC}
+		{04DBB4E8-FB45-4145-BF16-4AC4E51668C3} = {5946B20A-C826-498B-A0B7-766CCFD043AC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4DAE193B-A050-4912-A839-7F138947C0CA}
